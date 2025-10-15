@@ -2,7 +2,8 @@ package com.jenkins.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.annotations.Test;
 
 
@@ -10,7 +11,7 @@ public class SampleTest {
 	WebDriver driver;
 @Test
 	public void launch() {
-		driver=new EdgeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.saucedemo.com/");
 		System.out.println("successfully opend swaglab");
